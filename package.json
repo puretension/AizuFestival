@@ -9,6 +9,7 @@
         "lint": "next lint"
     },
     "dependencies": {
+        "@mui/material": "^5.16.11",
         "@notionhq/client": "^2.2.15",
         "classnames": "^2.5.1",
         "clsx": "^2.1.0",

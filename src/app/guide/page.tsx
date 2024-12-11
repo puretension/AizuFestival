@@ -92,12 +92,6 @@ const GuidePage = () => {
           />
         ))}
       </main>
-
-      <footer className="bg-gray-200 py-6">
-        <div className="container mx-auto text-center">
-          <p className="text-sm text-gray-500">© JR 동일본 뷰 관광 판매 주식회사 ALL RIGHTS RESERVED</p>
-        </div>
-      </footer>
     </div>
   );
 };
