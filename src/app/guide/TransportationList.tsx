@@ -1,6 +1,20 @@
 import React from 'react';
 
-const TransportationList = ({ items }) => {
+// Define a type for the transportation list items
+type TransportationItem = {
+  link: string;
+  icon: string;
+  alt: string;
+  station: string;
+  prefecture: string;
+};
+
+// Define the props for the TransportationList component
+type TransportationListProps = {
+  items: TransportationItem[];
+};
+
+const TransportationList: React.FC<TransportationListProps> = ({ items }) => {
   return (
     <ul className="transportation-list">
       {items.map((item, index) => (

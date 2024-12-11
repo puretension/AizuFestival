@@ -3,7 +3,15 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const CustomCard = ({ title, description, imageSrc, link }) => {
+
+type CustomCardProps = {
+  title: string;
+  description: string;
+  imageSrc: string;
+  link: string;
+};
+
+const CustomCard = ({ title, description, imageSrc, link }: CustomCardProps) => {
   return (
     <motion.div
       className="flex flex-row bg-white rounded-xl shadow-lg overflow-hidden mb-8 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
