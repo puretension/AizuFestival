@@ -1,13 +1,13 @@
-import { AnimationScope, stagger, useAnimate } from 'framer-motion';
+import { stagger, useAnimate } from 'framer-motion';
 import { useEffect } from 'react';
 
 /**
- * 토글 효과 함수: 토글 메뉴를 클릭하면 토클 내용을 보여줌(모션을 적용).
+ * 토글 효과 함수: 토글 메뉴를 클릭하면 토글 내용을 보여줌(모션을 적용).
  * @param {boolean} isOpen - 토글의 열림 여부
- * @returns {AnimationScope<any>} - ref={scope}로 모션 적용
+ * @returns {any} - ref={scope}로 모션 적용
  */
 
-export const toggle = (isOpen: boolean): AnimationScope<any> => {
+export const toggle = (isOpen: boolean): any => {
   const staggerMenuItems = stagger(0.1, { startDelay: 0.15 });
   const [scope, animate] = useAnimate();
 
