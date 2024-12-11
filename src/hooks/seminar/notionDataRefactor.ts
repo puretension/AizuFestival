@@ -33,7 +33,7 @@ export function refactorOpenSeminarData(items: any[]): OpenSeminar[] {
     title: item.properties['이름']?.title[0]?.plain_text ?? '',
     description: item.properties.Description?.rich_text[0]?.plain_text ?? '',
     image_url: item.cover?.file?.url ?? OpenSeminarThumbnailCardImg.src,
-    status: (item.properties.status?.status?.name === "종료" ? false : true) ?? false,
+    status:  item.properties['다중 선택'].multi_select[2]?.name ?? '',
     seminars: item.properties.Seminars?.relation ?? [{id: '1'}, {id: '2'}, {id: '3'}, {id: '4'}],
   }));
 }
