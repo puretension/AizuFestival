@@ -7,7 +7,7 @@ import HomeBanner from '@/components/home/banner/HomeBanner';
 import MoreAbout from '@/components/home/moreAbout/MoreAbout';
 import StoriesFrom from '@/components/home/storiesFrom/StoriesFrom';
 import React from 'react';
-
+'use client';
 const HomePage = () => {
   return (
     <main className="w-full overflow-hidden">
