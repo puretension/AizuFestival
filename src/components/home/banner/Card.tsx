@@ -9,11 +9,13 @@ export const IntroduceCard = ({
   subtitle,
   content,
   imageSrc,
+  onLearnMore,
 }: {
   title: string;
   subtitle: string;
   content: string;
   imageSrc: string;
+  onLearnMore: () => void;
 }) => {
   return (
     <motion.div
@@ -39,8 +41,8 @@ export const IntroduceCard = ({
         <p className="text-lg text-gray-600 mb-6">{subtitle}</p>
         <p className="text-gray-700 leading-relaxed">{content}</p>
 
-        <motion.a
-          href="#"
+        <motion.button
+          onClick={onLearnMore}
           className="mt-6 text-indigo-600 hover:text-indigo-800 font-semibold flex items-center gap-2 transition-all"
           whileHover={{ scale: 1.05 }}
         >
@@ -59,10 +61,11 @@ export const IntroduceCard = ({
               d="M13 7l5 5m0 0l-5 5m5-5H6"
             />
           </svg>
-        </motion.a>
+        </motion.button>
       </div>
     </motion.div>
   );
 };
+
 
 export default IntroduceCard;
