@@ -1,13 +1,10 @@
-import AboutGDSC from '@/components/home/aboutGDSC/AboutGDSC';
-import AboutGDSCDGU from '@/components/home/aboutGDSCDGU/AboutGDSCDGU';
-import Activity from '@/components/home/activity/Activity';
+'use client';
 import { CardComponents } from "@/components/home/banner/CardComponents";
 import FestivalTimetable from "@/components/home/banner/FestivalTimetable";
 import HomeBanner from '@/components/home/banner/HomeBanner';
-import MoreAbout from '@/components/home/moreAbout/MoreAbout';
-import StoriesFrom from '@/components/home/storiesFrom/StoriesFrom';
 import React from 'react';
-'use client';
+
+
 const HomePage = () => {
   return (
     <main className="w-full overflow-hidden">
